@@ -1,0 +1,333 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.container-app {
+  width: 90%;
+  margin: auto;
+  border-left: #1b1b1b;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login-form {
+  width: 400px;
+  border: 0.5px solid #979797;
+  padding: 50px;
+  position: absolute;
+  justify-content: center;
+}
+
+.login-form .submit-btn {
+  text-align: center;
+}
+
+.submit-btn input[type='submit'] {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.section .form-login,
+.section .form-register,
+.section-add .form-add {
+  border: 0.1px solid #ebebeb;
+  width: 500px;
+  padding: 60px 30px;
+  margin-right: 0;
+  margin-left: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 26px;
+  box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.add-image {
+  background-image: url('assets/add-photo.jpg');
+  background-position: 300% 10%;
+  background-size: cover;
+  height: 1000px;
+}
+
+.section-add {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.form-add {
+  margin: 200px auto auto;
+}
+
+.dropdown-menu {
+  position: absolute;
+}
+
+.remove-bullet {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.remove-bullet a {
+  text-decoration: none;
+  color: #1b1b1b;
+  cursor: pointer;
+}
+
+.remove-bullet a:active {
+  color: #1b1b1b;
+  background-color: rgb(240, 240, 240);
+}
+
+.error {
+  background-color: #fce4e4 !important;
+  border: 1px solid #cc0033 !important;
+  outline: none !important;
+}
+
+.login-to-register-text {
+  color: rgb(110, 110, 110);
+  font-size: small;
+}
+
+.login-to-register-text span {
+  color: #1770ff;
+  cursor: pointer;
+}
+
+.login-to-register-text span:hover {
+  text-decoration: underline;
+}
+
+.dropdown-toggle {
+  color: #fff !important;
+}
+
+.w-nav {
+  font-weight: bolder;
+  width: 200px;
+  padding: 6px;
+  margin: 0 10px;
+}
+
+.react-icons {
+  font-size: 20px;
+  margin: auto;
+  padding: 0;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+
+.pagination .page-num {
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+.pagination .page-num:hover {
+  background-color: #61dafb;
+  color: #fff;
+}
+
+.prev-icon,
+.next-icon {
+  font-size: 30px;
+  color: #6e6e6e;
+}
+
+.arrow-btn:hover {
+  color: #fff;
+  background-color: #6e6e6e;
+}
+
+/* CIRCLE DESIGN */
+.circle {
+  border-radius: 90%;
+  position: relative;
+  border-radius: 50%;
+}
+
+.circ1 {
+  width: 350px;
+  height: 350px;
+  top: 200px;
+  background: rgb(214, 171, 239);
+  background: linear-gradient(120deg, rgba(214, 171, 239, 1) 10%, rgba(153, 255, 252, 1) 90%);
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  animation: floating 20s infinite;
+}
+
+.circ2 {
+  width: 250px;
+  height: 250px;
+  top: 90px;
+  right: -500px;
+  background: rgb(214, 171, 239);
+  background: linear-gradient(90deg, rgba(214, 171, 239, 1) 10%, rgba(153, 255, 252, 1) 90%);
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  animation: circulate 10s infinite;
+}
+
+.circ3 {
+  width: 200px;
+  height: 200px;
+  right: -120px;
+  background: rgb(214, 171, 239);
+  background: linear-gradient(200deg, rgba(214, 171, 239, 1) 10%, rgba(153, 255, 252, 1) 90%);
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  animation: floating 10s infinite;
+}
+
+.circ4 {
+  width: 250px;
+  height: 250px;
+  background: rgb(214, 171, 239);
+  background: linear-gradient(10deg, rgba(214, 171, 239, 1) 10%, rgba(153, 255, 252, 1) 90%);
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  animation: circulate2 10s infinite;
+  z-index: 99;
+}
+
+@keyframes floating {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 100px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes circulate {
+  0% {
+    top: 0px;
+    right: -500px;
+  }
+
+  40% {
+    top: 100px;
+    right: -450px;
+  }
+
+  70% {
+    top: 100px;
+    right: -450px;
+  }
+
+  100% {
+    top: 0px;
+    right: -500px;
+  }
+}
+
+@keyframes circulate2 {
+  0% {
+    top: -100px;
+    right: 0px;
+  }
+
+  40% {
+    top: 100px;
+    right: -450px;
+  }
+
+  70% {
+    top: 100px;
+    right: -450px;
+  }
+
+  100% {
+    top: -100px;
+    right: 0px;
+  }
+}
+
+.bg-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.FormGroup {
+  height: 100vh;
+}
+
+.leaflet-container {
+  height: 50vh;
+  width: 100wh;
+}
+
+.success-text {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  margin: 20px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.success-text p span {
+  font-weight: bolder;
+}
+
+.btn-map {
+  background-color: #df6032;
+  color: #fff;
+}
+
+.btn-map-child {
+  width: 300px;
+}
